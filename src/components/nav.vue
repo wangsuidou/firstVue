@@ -1,12 +1,14 @@
 <template>
-	<div id='nav-list'>
-		 <ul class="nav-left">
-		 	<li class="nav-item" v-for=='item in items'>
-		 		<a href='#'>{{item.name}}<a>
-		 	</li>
-		 </ul>
-	</div>
+  <div id="nav-list">
+    <ul class="nav-left">
+      <li class="nav-item" v-for="item in items">
+         <!--<a href="#">1111111</a>-->
+         <a href="#">{{item.name}}</a>
+      </li>
+    </ul>
+  </div>
 </template>
+
 
 <script>
 export default {
@@ -28,39 +30,37 @@ export default {
         {name: '目前是否单身', add: 'single'},
         {name: '班群聊天记录分析', add: 'chat'},
         {name: '我的群聊活跃时间', add: 'onlyme'}
-      ],
-      isActive: [true, false,false,false,false,false,false,false,false,false,false,false,false,false,false]
+      ]
     }
   }
 }
 </script>
 
 
-
-<style>
-	#nav-list {
-	  position: fixed;
-	  left: 0;
-	  bottom: 0;
-	  top: 60px;
-	  padding: 20px 40px;
-	  line-height: 40px;
-	  background-color: #293c55;
-	  overflow-y: auto;
-	  z-index: 15;
-	}
-	.nav-left {
-	  width: 168px;
-	  font-family: "Microsoft Yahei", sans-serif;
-	}
-	.nav-item a {
-	  color: #b2b2b2;
-	  size: 14px;
-	}
-	.nav-item a:hover {
-	  color: rgba(255, 255, 255, 0.8);
-	}
-	a.router-link-active {
-	  color: rgba(255, 255, 255, 0.9);
-	}
+<style scoped>
+#nav-list {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 60px;
+  padding: 20px 40px;
+  line-height: 40px;
+  background-color: #293c55;
+  overflow-y: auto;
+  z-index: 15;
+}
+.nav-left {
+  width: 168px;
+  font-family: "Microsoft Yahei", sans-serif;
+}
+.nav-item a {
+  color: #b2b2b2;
+  size: 14px;
+}
+.nav-item a:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+a.router-link-active {
+  color: rgba(255, 255, 255, 0.9);
+}
 </style>

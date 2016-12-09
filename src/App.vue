@@ -2,17 +2,24 @@
   <div id="app">
     <my-head></my-head>
     <my-nav></my-nav>
+      <transition>
+    <router-view></router-view>
+      </transition>
+    <my-footer></my-footer>
   </div>
 </template>
 
 <script>
 import myHead from './components/header'
 import myNav from './components/nav'
+import myFooter from './components/footer'
+
 export default {
   name: 'app',
   components: {
     myHead,
-    myNav
+    myNav,
+    myFooter
   }
 }
 </script>

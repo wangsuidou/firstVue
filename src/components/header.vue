@@ -6,12 +6,12 @@
 	        <li class="nav">一个班主任对学生做的小调查与数据分析</li>
 	      </ul>
 	    </div>
-	    <div v-if="hasLogin" class="topbar-info">
+	   <!-- <div class="topbar-info">
 	      <span>123,欢迎你</span>
 	      <span>|</span>
 	      <button>退出</button>
-	    </div>
-	    <div v-else class="topbar-info">
+	    </div>-->
+	    <div class="topbar-info">
 	      <button >登录</button>
 	    </div>
 	  </div>
